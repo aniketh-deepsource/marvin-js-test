@@ -1,3 +1,6 @@
+console.log("fooo")
+
+
 const fs = require('fs')
 const process = require('process');
 
