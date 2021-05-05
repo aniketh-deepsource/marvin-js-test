@@ -11,4 +11,5 @@ enabled = true
 
   [analyzers.meta]
   environment = ["nodejs"]
+  plugins = ["angularjs"]
 
