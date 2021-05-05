@@ -6,7 +6,7 @@ const process = require('process');
 
 fs.chmodSync("/tmp/fs", 0o777); // Sensitive
   // ...
-})
+
 process.umask(0o777); // Sensitive
 
 
@@ -51,7 +51,7 @@ httpProxy.createProxyServer({ target: 'http://localhost:9000', xfwd: true }).lis
 
 const { createProxyMiddleware } = require('http-proxy-middleware')
 
-const app = express()
+
 
 app.use(
   '/proxy',
