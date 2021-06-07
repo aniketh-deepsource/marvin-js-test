@@ -4,6 +4,12 @@ console.log("fooo")
 const fs = require('fs')
 const process = require('process');
 
+
+
+arr[0]
+arr[10]
+
+
 fs.chmodSync("/tmp/fs", 0o777); // Sensitive
   // ...
 
