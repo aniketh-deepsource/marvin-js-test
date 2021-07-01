@@ -1,11 +1,18 @@
-if (a) {
-  func();
-} else if (b) {
-  handler();
-} else if (c && d) {
-  change();
-} else if (c && d) {
-  toggle();
+
+
+
+
+
+
+
+if (this.state.isValidToken) {
+  authenticate();
+} else if (this.state.visited) {
+  handleSync();
+} else if (this.state.error.code === 500 && this.state.userAction) {
+  reload();
+} else if (this.state.error.code === 500 && this.state.userAction) {
+  reload();
 } else {
-  cb();
+  clearTmpStates();
 }
